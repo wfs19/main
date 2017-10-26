@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #DADFE1;
+    background-image: url(../imagem/background.jpg);
+    background-position: 30% 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: solid rgba(0,0,0, 0.3);
+}
+
+.logo {
+    padding: 20px;
+    margin-left: 10%;
+    line-height: 100px;
+    width: 250px;
+    float: left;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+#navegacao {
+    width: 30%;
+    height: 100px;
+    margin-right: 10%;
+    float: right;
+}
+
+#navegacao ul {
+    list-style: none;
+    height: 50px;
+    line-height: 105px;
+    text-align: right;
+     
+}
+
+#navegacao ul li {
+    display: inline;
+    font-size: 130%;
+   
+}
+
+#navegacao ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 3% 3%;
+    border-radius: 10px;
+}
+
+#navegacao ul li a:hover {
+    background-color: #666;
+    transition: 1s;
+    border-radius: 10px;  
+}
+
+#principal {
+	text-align: left;
+    word-spacing: 0.5em;
+    margin: auto;
+    color: white;
+    margin-top: 15%;
+    margin-right: 20%;
+    margin-left: 20%;
+    clear: both; 
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    border-top: solid rgba(0,0,0, 0.3);
+}
+
+.tp {
+    width: 50%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    float: right;
+}
+
+small p {
+    color: #888;
+    text-align: right;
+}
+
+
+
+
+/* portifólio*/
+
+.port {
+    width: 30%;
+    float: left;
+    border: solid #222 5px;
+}
+
+.port figure img {
+    width: 100%;
+
+}
+
+.port figure figcaption {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+.sec p {
+    font-size: 30px;
+}
+.sec {
+    width: 60%;
+    color: white;
+    margin-top: 10%;
+    float: right;
+}
+
+/*Sobre*/
+.sec2 {
+    width: 80%;
+    color: white;
+    margin-top: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+.sec2 p {
+    font-size: 115%;
+    letter-spacing: 0.5;
+}
+
+/*contato*/
+
+
+.sec3 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    letter-spacing: 0.5;
+}
+
+.sec3 div {
+    display: inline-block;
+    margin: 30px;
+}
+
+.sec3 div img {
+    border: solid transparent 5px;
+    border-radius: 5px;
+}
+
+.sec3 div img:hover {
+    border: solid #222 5px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.central {
+
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+/* Media Queries *//*
+
+
+
+/* 710px */
+
+@media screen and (max-width: 1300px) {
+    
+    header {
+        height: 270px;
+    }
+    
+    .logo {
+        float: none;
+        margin: auto;
+    }
+    
+    .logo img {
+        margin-top: 30px;
+    }
+    
+   
+    #navegacao {
+        width: 100%;  
+        float: left;
+}
+    
+    #navegacao ul {
+    line-height: 30px; 
+    text-align: center;
+        
+}
+    #navegacao ul li {
+    
+    padding: 10px;
+    background-color: #111;
+    border-radius: 10px;
+}
+    #navegacao ul li a:hover {
+        background-color: transparent;
+    }
+
+
+    
+    #principal {
+	text-align: center;
+    height: 400px;
+    margin-top: 150px;
+        
+}
+    #principal h1 {
+	font-size: 25px;
+    margin-bottom: 10px;
+}
+    #principal h3 {
+	font-size: 15px;
+}
+    
+    footer {
+        margin-top: 50px;
+        position: relative;
+        bottom: 0;
+        
+        
+    }
+    
+    .tp {
+        float: none;
+        width: 100%;
+        
+    }
+    
+    small p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+}
+
+/*400*/
+
+@media screen and (max-width: 550px) {
+    
+    header {
+        height: 320px;
+    }
+    
+    .logo {
+        float: none;
+        margin: auto;
+    }
+    
+    .logo img {
+        margin-top: 30px;
+    }
+    
+    #navegacao {
+        width: 100%;
+        margin-right: 0;
+        margin-top: -35px;
+}
+    
+    #navegacao ul {
+    line-height: 30px;  
+}
+    #navegacao ul li {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    background-color: #111;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+    #navegacao ul li a {
+    border-radius: 0;
+    }
+    
+    #navegacao ul li a:hover {
+    background-color: transparent;
+}
+    
+    #principal {
+	text-align: center;
+    height: 400px;
+    margin-top: 150px;
+}
+    #principal h1 {
+	font-size: 25px;
+    margin-bottom: 10px;
+}
+    #principal h3 {
+	font-size: 15px;
+}
+    
+    footer {
+        margin-top: 50px;
+        position: relative;
+        
+        
+    }
+    
+    .tp {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    small p {
+        text-align: center;
+        line-height: 30px;
+    }
+
+}
+
+
+
+    

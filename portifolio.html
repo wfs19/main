@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portifólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="William Ferreira">
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <style type="text/css">
+        body{
+            background-image: url(imagem/background2.jpg);
+            background-position: top;
+            background-attachment: fixed;
+        }
+        
+        @media screen and (max-width: 1300px) {
+            footer {
+            position: absolute;
+            bottom: 0;
+        }
+            .port {
+                width: 20%;
+            }
+            
+             .port figure figcaption {
+                font-size: 90%;
+            }    
+            
+        @media screen and (max-width: 550px) {
+            
+            .central {
+                margin-top: 20px;
+            }
+            
+            .sec {
+            display: none!important;
+        }   
+            .port {
+                width: 40%;
+                float: none;
+                margin: auto;
+            }
+            
+            .port figure figcaption {
+                font-size: 75%;
+                padding: 0;
+            }    
+            
+            footer {
+                position: fixed;
+                height: 5%;
+            }
+            
+            small p {
+                line-height: 0;
+            }
+            
+            }
+            
+    </style>
+
+
+</head>
+
+<body>
+    
+    <header>
+        
+        <div class="logo">
+            <a href="index.html"><img src="imagem/logositeportifolio.png"></a>
+        </div>
+            
+        <nav id="navegacao">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+      
+        
+    
+    </header>
+    
+    <div class="central">
+        <div class="port">
+
+        <figure>
+
+            <a href="site_games/index.html" target="_blank"><img src="imagem/games.png" alt="Portifólio 1" title="imagem games"></a>
+            <figcaption>Site simples relacionado a Games</figcaption>
+            
+        </figure>    
+
+        </div>
+
+                <div class="sec">
+                    <p>Em breve, novos projetos que estão em construção.</p>
+                </div>
+    
+        
+    </div>
+    <footer>
+                <div class="tp">
+                <small>
+					<p>Desenvolvido por: William Ferreira</p>
+
+				</small>
+                </div>
+            
+    
+    </footer>
+    
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    
+        $('small p, .logo, .port')
+        .hide()
+        .delay('500')
+        .fadeIn('slow');
+        
+        $('.sec')
+        .hide()
+        .delay('1500')
+        .fadeIn('slow');
+        
+        
+    
+    </script>
+</body>
+    
+    
+    
+</html>
